@@ -46,8 +46,8 @@
 			$plugins = array(
 				// This is an example of how to include a plugin from the WordPress Plugin Repository.
 				array(
-					'name'      => 'BuddyPress',
-					'slug'      => 'buddypress',
+					'name'      => 'SV100 Companion',
+					'slug'      => 'sv100-companion',
 					'required'  => false,
 				),
 			);
