@@ -16,7 +16,7 @@
 			$this->set_module_title( 'SV Recommend Plugins' )
 				 ->set_module_desc( __( 'Recommend Plugins for use with our theme.', 'sv100' ) );
 			
-			require_once( $this->get_path( 'lib/modules/class-tgm-plugin-activation.php ') );
+			require_once( $this->get_path( 'lib/modules/class-tgm-plugin-activation.php' ) );
 			
 			// Action Hooks
 			add_action( 'tgmpa_register', array( $this, 'sv100_register_required_plugins' ) );
