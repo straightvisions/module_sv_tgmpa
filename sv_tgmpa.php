@@ -13,14 +13,15 @@
 	
 	class sv_tgmpa extends init {
 		public function init() {
-			// Module Info
-			$this->set_module_title( 'SV Recommend Plugins' );
-			$this->set_module_desc( __( 'Recommend Plugins for use with our theme.', 'sv100' ) );
+			$this->set_module_title( 'SV Recommend Plugins' )
+				 ->set_module_desc( __( 'Recommend Plugins for use with our theme.', 'sv100' ) );
 			
-			require_once($this->get_path('lib/modules/class-tgm-plugin-activation.php'));
+			require_once( $this->get_path( 'lib/modules/class-tgm-plugin-activation.php ') );
 			
-			add_action( 'tgmpa_register', array($this, 'sv100_register_required_plugins' ));
+			// Action Hooks
+			add_action( 'tgmpa_register', array( $this, 'sv100_register_required_plugins' ) );
 		}
+		
 		/**
 		 * Register the required plugins for this theme.
 		 *
@@ -38,7 +39,7 @@
 		 *
 		 * This function is hooked into `tgmpa_register`, which is fired on the WP `init` action on priority 10.
 		 */
-		function sv100_register_required_plugins() {
+		public function sv100_register_required_plugins() {
 			/*
 			 * Array of plugin arrays. Required keys are name and slug.
 			 * If the source is NOT from the .org repo, then source is also required.
