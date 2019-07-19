@@ -14,7 +14,7 @@
 	class sv_tgmpa extends init {
 		public function init() {
 			$this->set_module_title( 'SV Recommend Plugins' )
-				 ->set_module_desc( __( 'Recommend Plugins for use with our theme.', 'sv100' ) );
+				 ->set_module_desc( __( 'Recommend plugins for use with our theme.', 'sv100' ) );
 			
 			require_once( $this->get_path( 'lib/modules/class-tgm-plugin-activation.php' ) );
 			
