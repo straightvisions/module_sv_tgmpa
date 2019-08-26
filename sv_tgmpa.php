@@ -13,7 +13,7 @@
 	
 	class sv_tgmpa extends init {
 		public function init() {
-			$this->set_module_title( 'SV Recommend Plugins' )
+			$this->set_module_title( __( 'SV Recommend Plugins', 'sv100' ) )
 				 ->set_module_desc( __( 'Recommend plugins for use with our theme.', 'sv100' ) );
 			
 			require_once( $this->get_path( 'lib/modules/class-tgm-plugin-activation.php' ) );
@@ -47,7 +47,7 @@
 			$plugins = array(
 				// This is an example of how to include a plugin from the WordPress Plugin Repository.
 				array(
-					'name'      => 'SV100 Companion',
+					'name'      => __( 'SV100 Companion', 'sv100' ),
 					'slug'      => 'sv100-companion',
 					'required'  => false,
 				),
