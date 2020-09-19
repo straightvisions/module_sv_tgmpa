@@ -1,16 +1,6 @@
 <?php
 	namespace sv100;
-	
-	/**
-	 * @version         4.004
-	 * @author			straightvisions GmbH
-	 * @package			sv100
-	 * @copyright		2019 straightvisions GmbH
-	 * @link			https://straightvisions.com
-	 * @since			1.000
-	 * @license			See license.txt or https://straightvisions.com
-	 */
-	
+
 	class sv_tgmpa extends init {
 		public function init() {
 			$this->set_module_title( __( 'SV Recommend Plugins', 'sv100' ) )
