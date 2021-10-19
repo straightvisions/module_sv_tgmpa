@@ -385,7 +385,7 @@ if ( ! class_exists( 'TGM_Plugin_Activation' ) ) {
 				'return'						  => __( 'Return to Required Plugins Installer', 'sv100' ),
 				'dashboard'					   => __( 'Return to the Dashboard', 'sv100' ),
 				'plugin_activated'				=> __( 'Plugin activated successfully.', 'sv100' ),
-				'activated_successfully'		  => __( 'The following plugin was activated successfully:', 'sv100' ),
+				'activated_successfully'		  => __( 'The following plugin was activated successfully: ', 'sv100' ),
 				/* translators: 1: plugin name. */
 				'plugin_already_active'		   => __( 'No action taken. Plugin %1$s was already active.', 'sv100' ),
 				/* translators: 1: plugin name. */
